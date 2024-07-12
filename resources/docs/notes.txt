@@ -1,0 +1,47 @@
+- bin/
+
+This directory typically contains command-line executables. In a portfolio/blog context, you might not have much here, but examples could include:
+
+    Deployment scripts
+    Maintenance scripts (e.g., clearing cache, database backups)
+    Data migration scripts
+
+- config/
+
+Configuration files that manage various settings for your application. Examples include:
+
+    database.php: Database connection settings.
+    app.php: General application settings (e.g., environment settings, debug mode).
+    routes.php: Routing configuration if you’re handling routing manually.
+
+- public/
+
+Files and assets that are accessible publicly through the web server. Examples include:
+
+    index.php: The main entry point for your application.
+    .htaccess: Apache configuration file (if you're using Apache).
+    css/: Stylesheets (e.g., styles.css).
+    js/: JavaScript files (e.g., main.js).
+    assets/: Images for your blog/portfolio (e.g., profile pictures, portfolio thumbnails, icons).
+
+- resources/
+
+General resource files that aren't directly PHP source code. Examples include:
+
+    lang/: Language files for localization.
+    sql/: SQL files for database initialization or seeding.
+    docs/: Documentation for your application.
+
+- src/
+
+The main PHP source code for your application. Examples include:
+
+    classes/: files that contain classes to be included in other parts of the application
+
+- templates/
+
+View and layout files that are rendered to the user. Examples include:
+
+    layouts/: Main layout files (e.g., main.php, admin.php).
+    includes/: Reusable components (e.g., header.php, footer.php).
+    views/: Specific views for different pages (e.g., home.php, post.php, portfolio.php).

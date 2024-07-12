@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242424;
+    color: #E3E3E3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 3rem solid #1b1b1b;
+    border-bottom: 3rem solid #191919;
+}
+
+#elefant{
+    width: 200px;
+}
+
+.heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
+button{
+    background-color: #191919;
+    color: #E3E3E3;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
