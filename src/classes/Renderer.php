@@ -1,4 +1,6 @@
 <?php
+namespace Taujor\Sandbox;
+
 class Renderer {
     public function render (string $file, array $data = []): string
     {

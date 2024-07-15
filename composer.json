@@ -1,0 +1,18 @@
+{
+    "name": "taujor/sandbox",
+    "description": "php demo website",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Taujor\\Sandbox\\": "src/classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "taujor",
+            "email": "tauscherjordan933@gmail.com"
+        }
+    ],
+    "require": {}
+}

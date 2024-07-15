@@ -1,4 +1,5 @@
 <?php
+namespace Taujor\Sandbox;
 
 class Router {
     protected string $path;
