@@ -8,10 +8,10 @@ $router = new Router;
 $template = new Renderer("../templates/views/");
 
 $content = match($router->get()){
-    "/" => $template->render("home.php"),
-    default => $template->render("404.php")
+    "/" => $template->render("home"),
+    default => $template->render("404")
 };
 
 register_shutdown_function(function () use ($template, $content) {
-    echo $template->layout(__DIR__ . "/../templates/layouts/main.php", ["title" => "home", "content" => $content]);
+    echo $template->layout("main", ["title" => "home", "content" => $content]);
 });
