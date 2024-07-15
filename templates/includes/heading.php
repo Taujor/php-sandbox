@@ -1,5 +1,1 @@
-<?php
-
-function heading (string $node) :string{
-    return "<h1 class='heading'>" . $node . "</h1>";
-}
+<h1 class='heading'><?= $template->escape($title) ?></h1>

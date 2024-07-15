@@ -1,7 +1,3 @@
-<?php 
-    include __DIR__ . "/../includes/heading.php";
-?>
-
 <div>
-    <?= heading("Not Found") ?>
+    <?= $template->render(__DIR__ . "/../includes/heading.php", ["title" => "Not Found"]) ?>
 </div>

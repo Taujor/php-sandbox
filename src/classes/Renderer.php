@@ -1,25 +1,14 @@
 <?php
 class Renderer {
-    protected string $viewDirectory;
-    protected string $layoutDirectory;
-
-    public function __construct (string $viewDirectory = __DIR__ . "/../../templates/views/", string $layoutDirectory = __DIR__ . "/../../templates/layouts/"){
-        $this->layoutDirectory = $layoutDirectory;
-        $this->viewDirectory = $viewDirectory;
-    }
-
-    public function render (string $view, array $data = []): string
+    public function render (string $file, array $data = []): string
     {
         ob_start();
-        extract($data);
-        require $this->viewDirectory . $view . ".php";
+        extract(array_merge($data, ["template" => $this]));
+        require $file;
         return ob_get_clean();
     }
 
-    public function layout (string $layout, array $data = []): string{
-        ob_start();
-        extract($data);
-        require $this->layoutDirectory . $layout . ".php";
-        return ob_get_clean();
+    public function escape (string $string) :string {
+        return htmlspecialchars($string);
     }
 }
