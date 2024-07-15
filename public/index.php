@@ -1,4 +1,6 @@
 <?php
+mb_internal_encoding("UTF-8");
+mb_http_output("UTF-8");
 
 require __DIR__ . "/../src/classes/Router.php";
 require __DIR__ . "/../src/classes/Renderer.php";
@@ -12,5 +14,8 @@ $content = match($router->get()){
 };
 
 register_shutdown_function(function () use ($template, $content) {
-    echo $template->layout("main", ["title" => "home", "content" => $content]);
+    echo $template->layout("main", [
+        "title" => "home",
+        "content" => $content
+    ]);
 });
