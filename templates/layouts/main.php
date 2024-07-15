@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" href="/assets/php.svg" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="/css/main.css">
-    <title><?= $meta["title"] ?></title>
+    <title><?= $title ?></title>
 </head>
 <body>
     <?= $content ?>

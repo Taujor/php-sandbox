@@ -1,5 +1,5 @@
 
-const counterEL = document.querySelector("#counter")
+const counterEL = document.querySelector("#counter1")
 counterEL.addEventListener("mousedown", e => {
     let count = parseInt(e.target.getAttribute("data-count"))
 
