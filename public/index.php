@@ -1,6 +1,5 @@
 <?php
 
-require __DIR__ . "/../src/classes/Request.php";
 require __DIR__ . "/../src/classes/Router.php";
 require __DIR__ . "/../src/classes/Renderer.php";
 
