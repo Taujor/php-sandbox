@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "Taujor\\Sandbox\\": "src/classes/"
-        }
+        },
+        "files": [
+            "config/routes.php"
+        ]
     },
     "authors": [
         {
