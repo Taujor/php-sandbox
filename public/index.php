@@ -10,6 +10,7 @@ $router = new Router($template);
 
 $router->get("/", fn() =>
     $template->layout("main", [
+        "title" => "home",
         "content" => $template->view("home")
     ])
 );
