@@ -43,6 +43,8 @@ class Router {
                 "title" => "Error - 404"
             ]); 
         } else {
+            header_remove("X-Powered-By");
+            header("Content-Type: text/html; charset=utf-8");
             $handler = $this->routes[$this->method][$this->path];
             return $handler();
         }
